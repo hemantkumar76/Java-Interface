@@ -28,5 +28,13 @@ class washing_machine implements motor {
 
 public class lab_8_qs_2 {
 
+   public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("enter you capacity ");
+        int capacity = scanner.nextInt();
+        washing_machine washing_machine = new washing_machine(capacity);
+        System.out.println("total capacity is " + washing_machine.capacity);
+        scanner.close();
+
     }
 }
